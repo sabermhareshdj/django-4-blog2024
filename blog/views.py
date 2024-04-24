@@ -15,13 +15,21 @@ class PostList(ListView):  #template : post_list
 
 
 
-# def post_detail(request,post_id):
-#   data = Post.objects.get(id=post_id)
-#   return render(request,'post_detail.html',{'post':data})
+def post_detail(request,pk):
+  data = Post.objects.get(id=pk)
+  return render(request,'blog/post_detail.html',{'post':data})
 
 
-class PostDetail(DetailView):
-  model = Post
+
+
+
+# class PostDetail(DetailView):
+#   model = Post
+
+
+def add_comment(request):
+  pass
+
 
 # def post_new(request):
 #   if request.method == 'POST':
