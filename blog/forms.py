@@ -5,7 +5,7 @@ from django_summernote.fields import SummernoteTextFormField, SummernoteTextFiel
 
 
 
-
+# comment
 
 
 class PostForm(forms.ModelForm):
